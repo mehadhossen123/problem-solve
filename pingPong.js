@@ -1,0 +1,15 @@
+function getPingPong(n) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("pingPong");
+    } else if (i % 3 === 0) {
+      console.log("ping");
+    } else if (i % 5 === 0) {
+      console.log("pong");
+    } else {
+      console.log(i);
+    }
+  }
+}
+const result = getPingPong(20);
+console.log(result);
